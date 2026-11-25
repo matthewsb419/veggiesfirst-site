@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<title>Your account · Veggies First</title>
+<link rel="icon" href="../favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800;900&display=swap">
+<style>
+:root {
+  --paper: #fbf2e5; --card: #fffaf0; --ink: #4a3426; --soft: #7d6656; --line: #e6d8c4;
+  --sage: #4f8a57; --sage-ink: #ffffff; --sage-wash: #e4ecd9; --carrot: #e07b39; --berry: #b5483c;
+  --font: "Nunito", ui-rounded, -apple-system, "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #201812; --card: #2a2019; --ink: #f4e8d8; --soft: #bfab99; --line: #453629;
+    --sage: #86c48f; --sage-ink: #12200f; --sage-wash: #2a3524; --carrot: #f0975a; --berry: #e58a7e;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.5 var(--font); }
+a { color: var(--sage); }
+.wrap { max-width: 720px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+header { padding-block: 18px; }
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 900; font-size: 1.15rem; color: var(--ink); text-decoration: none; }
+.brand img { width: 44px; height: 44px; border-radius: 11px; }
+.top { display: flex; align-items: center; gap: 12px; }
+.top .link { margin-left: auto; }
+h1 { font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.1; font-weight: 900; margin: 18px 0 8px; text-wrap: balance; }
+h2 { font-size: 1.15rem; font-weight: 900; margin: 0 0 10px; }
+p { margin: 0 0 12px; }
+.soft { color: var(--soft); }
+.small { font-size: .9rem; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 20px; margin-block: 16px; }
+button { font: inherit; font-weight: 900; border: 0; border-radius: 999px; padding: 11px 20px; cursor: pointer; background: var(--sage); color: var(--sage-ink); }
+button:disabled { opacity: .5; cursor: default; }
+button.apple { background: var(--ink); color: var(--paper); padding: 13px 26px; font-size: 1.05rem; }
+button.link { background: none; color: var(--soft); padding: 6px 0; text-decoration: underline; font-weight: 800; font-size: .92rem; }
+.note { background: var(--sage-wash); border-radius: 16px; padding: 12px 16px; margin-block: 12px; }
+.oops { color: var(--berry); font-weight: 800; }
+.stats { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 4px; }
+.stat { background: var(--sage-wash); border-radius: 14px; padding: 8px 14px; font-weight: 900; }
+.stat small { display: block; font-weight: 800; color: var(--soft); font-size: .75rem; letter-spacing: .04em; text-transform: uppercase; }
+.day { color: var(--carrot); font-weight: 900; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; margin: 16px 0 4px; }
+ul.list { list-style: none; margin: 0; padding: 0; }
+ul.list li { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); min-width: 0; }
+ul.list li:last-child { border-bottom: 0; }
+.tick { flex: none; width: 26px; height: 26px; border-radius: 50%; border: 2px solid var(--sage); background: none; padding: 0; color: var(--sage-ink); font-size: .9rem; line-height: 1; }
+.tick.done { background: var(--sage); }
+.tick.wait { border-style: dashed; opacity: .7; }
+.title { flex: 1; min-width: 0; overflow-wrap: anywhere; font-weight: 800; }
+.title.done { text-decoration: line-through; color: var(--soft); font-weight: 600; }
+.meta { display: block; font-weight: 600; font-size: .85rem; color: var(--soft); text-decoration: none; }
+.worth { flex: none; color: var(--soft); font-weight: 800; font-size: .88rem; }
+form.add { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+form.add input, form.add select { font: inherit; border: 1px solid var(--line); background: var(--paper); color: var(--ink); border-radius: 14px; padding: 10px 14px; min-width: 0; }
+form.add input { flex: 1 1 220px; }
+dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; margin: 0; }
+dt { color: var(--soft); font-weight: 800; }
+dd { margin: 0; font-weight: 800; overflow-wrap: anywhere; }
+footer { padding-block: 26px 44px; color: var(--soft); font-size: .9rem; display: flex; flex-wrap: wrap; gap: 8px 20px; }
+footer a { color: var(--soft); font-weight: 800; }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="top">
+    <a class="brand" href="../"><img src="../img/icon.png" alt="" width="44" height="44">Veggies First</a>
+    <button class="link" id="signOut" hidden>Sign out</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="out" hidden>
+    <h1>Your account</h1>
+    <p class="soft">See today's veggies and add new ones from any browser. Sign in with the same Apple ID you use in the app.</p>
+    <div class="card">
+      <button class="apple" id="signIn"> Sign in with Apple</button>
+      <p class="oops" id="outError" hidden></p>
+      <p class="soft small" style="margin:14px 0 0">Your list lives on your phone. Signing in here asks your phone to send a copy of your veggies so this page can show them. You can switch that off again from this page at any time. The details are on the <a href="../privacy.html">privacy page</a>.</p>
+    </div>
+  </section>
+
+  <section id="loading"><p class="soft" style="margin-top:30px">One moment…</p></section>
+
+  <section id="none" hidden>
+    <h1>No account under this Apple ID yet</h1>
+    <p class="soft">Accounts are made in the app. Open Veggies First on your iPhone, go to Setup, then Account, and sign in with Apple. Then come back here.</p>
+  </section>
+
+  <section id="in" hidden>
+    <h1 id="hello">Today's plate</h1>
+    <p class="soft small" id="asOf"></p>
+    <p class="oops" id="inError" hidden></p>
+
+    <div class="card" id="waiting" hidden>
+      <h2>Waiting for your phone</h2>
+      <p class="soft" style="margin:0">Open Veggies First on your iPhone. Your list shows here about a minute later.</p>
+    </div>
+
+    <div class="card" id="plate" hidden>
+      <div class="stats" id="stats"></div>
+      <div id="days"></div>
+      <form class="add" id="add">
+        <input id="addTitle" maxlength="120" placeholder="Add a veggie" aria-label="Add a veggie" required>
+        <select id="addDay" aria-label="When"><option value="today">Today</option><option value="tomorrow">Tomorrow</option><option value="backlog">Backlog</option></select>
+        <button>Add</button>
+      </form>
+      <p class="note small" id="pending" hidden></p>
+      <p class="soft small" style="margin:12px 0 0">Changes made here land the next time Veggies First is open on your phone. Your phone has the last word: a veggie that needs proof is still finished in the app.</p>
+    </div>
+
+    <div class="card" id="backlogCard" hidden>
+      <h2>Backlog</h2>
+      <ul class="list" id="backlog"></ul>
+    </div>
+
+    <div class="card">
+      <h2>Account</h2>
+      <dl id="facts"></dl>
+      <p class="soft small" style="margin:14px 0 0">Locks, dessert apps and Screen Time settings are kept on your phone and are changed in the app. Plans are bought, changed and cancelled in the App Store.</p>
+      <p style="margin:10px 0 0"><button class="link" id="webOff">Stop showing my list on the web</button></p>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <a href="../">Home</a><a href="../support.html">Support</a><a href="../privacy.html">Privacy</a>
+</footer>
+
+<script src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+<script>
+"use strict";
+// The server is the app's own (the key is the publishable one, the same as in the app).
+const API = "https://wmdexaafwwjytatzekur.supabase.co";
+const KEY = "sb_publishable_5wUh_-ewDhebRYonDwjsaA_6wv6C2wX";
+// The Services ID registered with Apple for this site.
+const APPLE_ID = "app.veggiesfirst.web";
+const STORE = "vf-session";
+
+const $ = id => document.getElementById(id);
+const show = id => ["out", "loading", "none", "in"].forEach(s => $(s).hidden = s !== id);
+let session = null, account = null, timer = null;
+
+function load() { try { return JSON.parse(localStorage.getItem(STORE)); } catch { return null; } }
+function keep(s) { session = s; try { s ? localStorage.setItem(STORE, JSON.stringify(s)) : localStorage.removeItem(STORE); } catch {} }
+
+async function auth(path, body) {
+  const r = await fetch(API + "/auth/v1/" + path, { method: "POST", headers: { apikey: KEY, "Content-Type": "application/json" }, body: JSON.stringify(body) });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(j.msg || j.error_description || j.message || "Sign-in didn't work.");
+  return { access: j.access_token, refresh: j.refresh_token, until: Date.now() + (j.expires_in || 3600) * 1000 };
+}
+async function token() {
+  if (!session) throw new Error("signed out");
+  if (session.until - Date.now() < 60000) keep(await auth("token?grant_type=refresh_token", { refresh_token: session.refresh }));
+  return session.access;
+}
+async function rpc(name, body) {
+  const r = await fetch(API + "/rest/v1/rpc/" + name, { method: "POST", headers: { apikey: KEY, Authorization: "Bearer " + await token(), "Content-Type": "application/json" }, body: JSON.stringify(body || {}) });
+  if (r.status === 401) { signedOut(); throw new Error("Please sign in again."); }
+  const j = r.status === 204 ? null : await r.json().catch(() => null);
+  if (!r.ok) throw new Error((j && j.message) || "That didn't go through.");
+  return j;
+}
+
+async function sha256(text) {
+  const d = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+  return [...new Uint8Array(d)].map(b => b.toString(16).padStart(2, "0")).join("");
+}
+async function signIn() {
+  $("outError").hidden = true;
+  try {
+    const raw = [...crypto.getRandomValues(new Uint8Array(16))].map(b => b.toString(16).padStart(2, "0")).join("");
+    AppleID.auth.init({ clientId: APPLE_ID, scope: "", redirectURI: location.origin + "/account/", usePopup: true, nonce: await sha256(raw) });
+    const got = await AppleID.auth.signIn();
+    keep(await auth("token?grant_type=id_token", { provider: "apple", id_token: got.authorization.id_token, nonce: raw }));
+    show("loading");
+    await refresh();
+  } catch (e) {
+    if (e && e.error === "popup_closed_by_user") return;
+    $("outError").textContent = (e && e.message) || "Sign-in didn't work. Try again.";
+    $("outError").hidden = false;
+    show("out");
+  }
+}
+function signedOut() { keep(null); account = null; clearTimeout(timer); $("signOut").hidden = true; show("out"); }
+
+function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+function dayName(day, today) {
+  if (day === today) return "Today";
+  const d = new Date(day + "T12:00:00"), t = new Date(today + "T12:00:00");
+  if (Math.round((d - t) / 864e5) === 1) return "Tomorrow";
+  return d.toLocaleDateString(undefined, { weekday: "long", month: "short", day: "numeric" });
+}
+function ago(iso) {
+  const m = Math.max(0, Math.round((Date.now() - new Date(iso)) / 60000));
+  if (m < 2) return "just now";
+  if (m < 60) return m + " minutes ago";
+  if (m < 1440) return Math.round(m / 60) + " hours ago";
+  return new Date(iso).toLocaleDateString(undefined, { month: "short", day: "numeric" });
+}
+
+function render() {
+  const phones = account.phones || [];
+  const phone = phones.find(p => p.summary) || phones[0];
+  const waiting = (account.requests || []).filter(r => r.status === "pending");
+  const refused = (account.requests || []).filter(r => r.status === "refused" && Date.now() - new Date(r.answered_at) < 600000);
+  const s = phone && phone.summary;
+  $("waiting").hidden = !!s;
+  $("plate").hidden = !s;
+  $("backlogCard").hidden = !(s && s.backlog && s.backlog.length);
+  $("asOf").textContent = s ? "As your phone last sent it, " + ago(phone.summary_at) + "." : "";
+  if (s) {
+    const stats = $("stats"); stats.replaceChildren();
+    [["Left today", s.left_today], ["Earned today", s.ddc_today], ["Piggy bank", s.piggy_bank]].forEach(([k, v]) => {
+      if (v == null) return;
+      const b = el("div", "stat"); b.append(el("small", null, k), String(v)); stats.append(b);
+    });
+    const days = $("days"); days.replaceChildren();
+    const byDay = {};
+    (s.veggies || []).forEach(v => (byDay[v.day] = byDay[v.day] || []).push(v));
+    Object.keys(byDay).sort().forEach(day => {
+      days.append(el("p", "day", dayName(day, s.today)));
+      const ul = el("ul", "list");
+      byDay[day].forEach(v => {
+        const asked = waiting.find(r => r.veggie_id === v.id);
+        const li = el("li");
+        const tick = el("button", "tick" + (v.done ? " done" : "") + (asked ? " wait" : ""), v.done ? "✓" : "");
+        tick.setAttribute("aria-label", (v.done ? "Uncheck " : "Check off ") + v.title);
+        tick.disabled = !!asked || day !== s.today || (!v.done && (v.needs_proof || v.finishes_itself));
+        tick.onclick = () => ask(phone, v.done ? "uncheck" : "complete", v.id);
+        const title = el("span", "title" + (v.done ? " done" : ""), v.title);
+        const bits = [];
+        if (asked) bits.push("waiting for your phone");
+        if (!v.done && v.needs_proof) bits.push("needs proof in the app");
+        if (!v.done && v.finishes_itself) bits.push("finishes itself");
+        if (v.repeats) bits.push("repeats");
+        if (v.from) bits.push("from " + v.from);
+        if (bits.length) title.append(el("span", "meta", bits.join(" · ")));
+        li.append(tick, title, el("span", "worth", v.ddc != null ? "+" + v.ddc : ""));
+        ul.append(li);
+      });
+      days.append(ul);
+    });
+    if (!(s.veggies || []).length) days.append(el("p", "soft", "Nothing on the plate yet."));
+    $("add").hidden = s.can_add_own === false;
+    const bl = $("backlog"); bl.replaceChildren();
+    (s.backlog || []).forEach(b => { const li = el("li"); li.append(el("span", "title", b.title)); bl.append(li); });
+    const adds = waiting.filter(r => r.kind === "add");
+    const lines = adds.map(r => "“" + ((r.payload && r.payload.title) || "A veggie") + "” is waiting for your phone.")
+      .concat(refused.map(r => "Your phone said no: " + (r.result || "it couldn't do that.")));
+    $("pending").hidden = !lines.length;
+    $("pending").textContent = lines.join(" ");
+  }
+  const facts = $("facts"); facts.replaceChildren();
+  const fact = (k, v) => { if (v) facts.append(el("dt", null, k), el("dd", null, v)); };
+  fact("Since", new Date(account.since).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" }));
+  fact("Plan", account.free_forever ? "Free for good, as an early tester" :
+    account.free_until && new Date(account.free_until) > new Date() ? "Free until " + new Date(account.free_until).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" }) : "Managed in the App Store");
+  phones.forEach((p, i) => fact(phones.length > 1 ? "Phone " + (i + 1) : "Phone", [p.device_model, p.app_build && "build " + p.app_build].filter(Boolean).join(", ")));
+  const seat = phone && phone.household;
+  if (seat) fact("Household", [seat.member, seat.is_admin ? "runs it" : seat.role].filter(Boolean).join(", "));
+  clearTimeout(timer);
+  timer = setTimeout(() => refresh().catch(() => {}), waiting.length || !s ? 15000 : 60000);
+}
+
+async function refresh() {
+  account = await rpc("web_account");
+  $("signOut").hidden = false;
+  if (!account || account.account === false) { show("none"); return; }
+  show("in"); render();
+}
+async function ask(phone, kind, veggie, payload) {
+  $("inError").hidden = true;
+  try {
+    await rpc("web_plate_request", { install: phone.install_id, kind, veggie: veggie || null, payload: payload || {} });
+    await refresh();
+  } catch (e) { $("inError").textContent = e.message; $("inError").hidden = false; }
+}
+
+$("signIn").onclick = signIn;
+$("signOut").onclick = signedOut;
+$("add").onsubmit = e => {
+  e.preventDefault();
+  const title = $("addTitle").value.trim(), phones = (account && account.phones) || [];
+  const phone = phones.find(p => p.summary) || phones[0];
+  if (!title || !phone) return;
+  $("addTitle").value = "";
+  ask(phone, "add", null, { title, day: $("addDay").value });
+};
+let offArmed = false;
+$("webOff").onclick = async () => {
+  if (!offArmed) { offArmed = true; $("webOff").textContent = "Tap again to remove your list from the web and sign out"; return; }
+  try { await rpc("web_off"); } catch {}
+  signedOut();
+};
+document.addEventListener("visibilitychange", () => { if (!document.hidden && session && account) refresh().catch(() => {}); });
+
+session = load();
+if (session) refresh().catch(e => { if (session) { $("inError").textContent = e.message; $("inError").hidden = false; show("in"); } });
+else show("out");
+</script>
+</body>
+</html>
