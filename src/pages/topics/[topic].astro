@@ -1,0 +1,26 @@
+---
+import Base from "../../layouts/Base.astro";
+import GuideCards from "../../components/GuideCards.astro";
+import DownloadCTA from "../../components/DownloadCTA.astro";
+import { guides, TOPICS } from "../../guides";
+
+// A hub page per topic, made only once the topic has a guide.
+export async function getStaticPaths() {
+  const all = await guides();
+  return Object.keys(TOPICS)
+    .map((topic) => ({ params: { topic }, props: { list: all.filter((g) => g.data.topic === topic) } }))
+    .filter((p) => p.props.list.length > 0);
+}
+const { topic } = Astro.params;
+const { list } = Astro.props;
+const t = TOPICS[topic];
+---
+<Base title={`${t.name} · Veggies First guides`} description={t.blurb} path={`/topics/${topic}/`} noindex={list.every((g) => g.data.draft)}>
+  <div class="wrap crumbs"><a href="/guides/">Guides</a> › {t.name}</div>
+  <div class="wrap" style="padding-block: 18px 30px">
+    <h1>{t.name}</h1>
+    <p class="intro">{t.blurb}</p>
+    <GuideCards guides={list} />
+    <DownloadCTA />
+  </div>
+</Base>

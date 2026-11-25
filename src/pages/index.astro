@@ -1,0 +1,133 @@
+---
+import Base from "../layouts/Base.astro";
+import Download from "../components/Download.astro";
+import GuideCards from "../components/GuideCards.astro";
+import { guides, TOPICS } from "../guides";
+import ld from "../home-ld.json";
+const all = await guides();
+---
+<Base title="Veggies First · Stop doomscrolling. Do your to-dos first." description="Veggies First is a to-do list that keeps the apps you scroll locked until today's to-dos are done. Finish one and you earn time. Clear the list and the rest of the day is yours." path="/" ld={ld} home>
+  <div class="wrap hero">
+    <div>
+      <h1>Stop doomscrolling. <span>Do your to-dos first.</span></h1>
+      <p class="lede">A to-do list that keeps the apps you scroll locked until the things that matter are done.</p>
+      <Download />
+      <p class="sub">For iPhone. Free to try for 14 days.</p>
+    </div>
+    <img class="phone" src="/img/01-plate.jpg" width="660" height="1434" alt="The My Plate screen: three to-dos left and two checked off, each worth 10 minutes of app time.">
+  </div>
+
+  <section class="wrap" id="how">
+    <p class="kicker">How it works</p>
+    <h2>Eat your veggies before dessert.</h2>
+    <p class="intro">It's easy to lose hours to social media, short videos and games while the things that keep your life running wait. Veggies First puts them back in the right order.</p>
+    <div class="steps">
+      <div class="step"><b>1</b><h3>Your to-dos are veggies</h3><p>Plan tomorrow's plate tonight. At midnight it becomes today's list.</p></div>
+      <div class="step"><b>2</b><h3>The apps you pick are dessert</h3><p>Single apps, whole categories or websites. While veggies are left, dessert stays locked.</p></div>
+      <div class="step"><b>3</b><h3>Finish one, earn time</h3><p>Every veggie earns dessert minutes. Clear the plate and the rest of the day is yours.</p></div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="shot"><img src="/img/02-locked.jpg" width="660" height="1434" loading="lazy" alt="The lock screen on a dessert app: locked until you finish a veggie, with today's veggies listed."></div>
+      <div>
+        <p class="kicker">Moderation, not a ban</p>
+        <h2>Dessert waits until the veggies are done.</h2>
+        <p>It isn't about giving up the apps you like. Take care of what matters, then enjoy your screen time without it eating the day.</p>
+        <ul>
+          <li>Rule changes take effect tomorrow, not in the moment.</li>
+          <li>A few passes for when you really need one.</li>
+          <li>An empty plate stays locked, so there's no skipping the planning.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row flip">
+      <div class="shot"><img src="/img/03-timeCheck.jpg" width="660" height="1434" loading="lazy" alt="A time check: 15 of 25 minutes left in this session, then a 15 minute dessert break."></div>
+      <div>
+        <p class="kicker">Time you can see</p>
+        <h2>Finish one. Earn your time.</h2>
+        <p>Dessert time is counted in minutes you actually use. A quick check-in shows how far into a session you are, and when it's up, dessert takes a short break.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="shot"><img src="/img/04-proof.jpg" width="660" height="1434" loading="lazy" alt="The proof sheet: steps, a place, a video, a route, a photo, a screenshot or a note."></div>
+      <div>
+        <p class="kicker">Hard to cheat</p>
+        <h2>Proof for the ones that matter.</h2>
+        <p>A photo, a screenshot, a short video, a walking route or a note, checked by someone you choose. Your reviewer doesn't need the app: they get a link by text.</p>
+        <ul>
+          <li>Step goals count themselves from Apple Health.</li>
+          <li>Time at a place, like an hour at the gym or the library.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row flip">
+      <div class="shot"><img src="/img/05-household.jpg" width="660" height="1434" loading="lazy" alt="The Household tab: each kid's veggies for today on one screen."></div>
+      <div>
+        <p class="kicker">For households</p>
+        <h2>Help your kids build good habits.</h2>
+        <p>Chores and homework first, then screen time. Parents hand out veggies, set what each one earns and review the proof. Kids see what's theirs to do and what it unlocks.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="shot"><img src="/img/06-import.jpg" width="660" height="1434" loading="lazy" alt="Import with your AI: a pasted list of dated tasks becomes five veggies."></div>
+      <div>
+        <p class="kicker">For students</p>
+        <h2>A syllabus in, veggies out.</h2>
+        <p>Hand a photo or PDF of a syllabus, a schedule or a chore list to the AI you already use. Paste back the list it writes and every task lands on the right day.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="wrap" id="plans">
+    <p class="kicker">Plans</p>
+    <h2>Free for 14 days. Then pick a plan.</h2>
+    <p class="intro">Everything is included in every plan. You pay nothing today, and you can cancel any time up to a day before the trial ends.</p>
+    <div class="plans">
+      <div class="plan best"><h3>Yearly <span class="tag">Save 20%</span></h3><div class="price">$47.99 <small>a year</small></div><p>About $4 a month.</p></div>
+      <div class="plan"><h3>Monthly</h3><div class="price">$4.99 <small>a month</small></div><p>Cancel whenever.</p></div>
+      <div class="plan"><h3>Lifetime</h3><div class="price">$99 <small>once</small></div><p>Yours for good. No trial.</p></div>
+    </div>
+    <p class="fine">One plan for the whole household covers up to six people: $9.99 a month or $95.99 a year. Prices are in US dollars and are charged through the App Store, where subscriptions renew until cancelled.</p>
+  </section>
+
+  <section class="wrap">
+    <div class="private">
+      <p class="kicker">Private by design</p>
+      <h2>Your list stays yours.</h2>
+      <ul>
+        <li>Your to-dos, Screen Time choices, steps and location live on your phone.</li>
+        <li>No ads, no tracking, nothing sold.</li>
+        <li>Sign in with Apple, and delete your account any time in the app.</li>
+      </ul>
+      <p class="fine">The details are on the <a href="/privacy.html">privacy page</a>.</p>
+    </div>
+  </section>
+  <section class="wrap faq" id="questions">
+    <p class="kicker">Questions</p>
+    <h2>Good to know.</h2>
+    <details><summary>What is Veggies First?</summary><p>Veggies First is an iPhone to-do list that doubles as an app blocker. You pick the apps that eat your time, and they stay locked until today's to-dos are done. Each to-do you finish earns minutes on those apps.</p></details>
+    <details><summary>How does it help me stop doomscrolling?</summary><p>The apps you scroll are locked at the start of the day. To open them you finish something on your list first, and the time you earn runs out, so a quick look can't turn into hours.</p></details>
+    <details><summary>Does it block apps completely?</summary><p>No. It's built for moderation. You choose which apps, categories or websites count as dessert, how many minutes each to-do earns, and once the list is clear the rest of the day is yours.</p></details>
+    <details><summary>Can I just turn it off when I'm tempted?</summary><p>Rule changes take effect tomorrow, not in the moment, so the choice you made with a clear head holds. There are a few passes for the days you really need one.</p></details>
+    <details><summary>Does it work for kids and families?</summary><p>Yes. In a household, parents hand out chores and homework, set what each one earns and review the proof. One Household plan covers up to six people.</p></details>
+    <details><summary>How much does it cost?</summary><p>It's free to try for 14 days. After that it's $4.99 a month, $47.99 a year or $99 once for a lifetime plan. A Household plan for up to six people is $9.99 a month or $95.99 a year.</p></details>
+    <details><summary>Is there an Android version?</summary><p>Not yet. Veggies First is for iPhone, and it uses Apple's Screen Time to lock apps.</p></details>
+    <details><summary>What happens to my data?</summary><p>Your to-dos, Screen Time choices, steps and location live on your phone. There are no ads and no tracking, and nothing is sold. You can delete your account in the app at any time.</p></details>
+  </section>
+
+  {all.length > 0 && (
+    <section class="wrap" id="guides">
+      <p class="kicker">Guides</p>
+      <h2>Get your time back.</h2>
+      <p class="intro">Short, practical how-tos on screen time, focus and getting things done.</p>
+      <GuideCards guides={all.slice(0, 6)} />
+      <p class="fine"><a href="/guides/">All guides</a></p>
+    </section>
+  )}
+</Base>
