@@ -1,0 +1,48 @@
+---
+import { render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import DownloadCTA from "../../components/DownloadCTA.astro";
+import GuideCards from "../../components/GuideCards.astro";
+import { guides, TOPICS } from "../../guides";
+import { SITE, NAME } from "../../config";
+
+export async function getStaticPaths() {
+  const all = await guides();
+  return all.map((guide) => ({ params: { slug: guide.id }, props: { guide, all } }));
+}
+const { guide, all } = Astro.props;
+const { Content } = await render(guide);
+const d = guide.data;
+const topic = TOPICS[d.topic];
+const related = d.related.map((slug) => all.find((g) => g.id === slug)).filter(Boolean);
+const more = related.length ? related : all.filter((g) => g.id !== guide.id && g.data.topic === d.topic).slice(0, 3);
+const day = (date) => date.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
+const path = `/guides/${guide.id}/`;
+const ld = {
+  "@context": "https://schema.org", "@type": "Article", headline: d.title, description: d.description,
+  datePublished: d.published.toISOString(), dateModified: (d.updated ?? d.published).toISOString(),
+  mainEntityOfPage: SITE + path, image: SITE + "/img/og.jpg",
+  author: { "@type": "Organization", name: NAME, url: SITE + "/" }, publisher: { "@type": "Organization", name: NAME, logo: { "@type": "ImageObject", url: SITE + "/img/icon.png" } },
+};
+---
+<Base title={`${d.title} · ${NAME}`} description={d.description} path={path} ld={ld} type="article" noindex={d.draft}>
+  <div class="wrap crumbs"><a href="/guides/">Guides</a> › <a href={`/topics/${d.topic}/`}>{topic.name}</a></div>
+  <article class="wrap guide">
+    <h1>{d.title}</h1>
+    <p class="dates">{d.updated ? `Updated ${day(d.updated)}` : day(d.published)}{d.checkedOn && ` · Steps checked on ${d.checkedOn}`}</p>
+    <Content />
+    {d.sources.length > 0 && (
+      <>
+        <h2>Sources</h2>
+        <ul>{d.sources.map((s) => <li><a href={s.url} rel="noopener">{s.title}</a></li>)}</ul>
+      </>
+    )}
+    <DownloadCTA />
+    {more.length > 0 && (
+      <div class="related">
+        <h2>Keep reading</h2>
+        <GuideCards guides={more} />
+      </div>
+    )}
+  </article>
+</Base>

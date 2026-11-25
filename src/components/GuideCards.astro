@@ -1,0 +1,11 @@
+---
+const { guides } = Astro.props;
+---
+<div class="cards">
+  {guides.map((g) => (
+    <a class="cardlink" href={`/guides/${g.id}/`}>
+      <h3>{g.data.title}</h3>
+      <p>{g.data.description}</p>
+    </a>
+  ))}
+</div>

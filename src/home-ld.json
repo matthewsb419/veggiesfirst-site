@@ -1,0 +1,119 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://veggiesfirst.app/#org",
+   "name": "Veggies First",
+   "url": "https://veggiesfirst.app/",
+   "logo": "https://veggiesfirst.app/img/icon.png"
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://veggiesfirst.app/#site",
+   "url": "https://veggiesfirst.app/",
+   "name": "Veggies First",
+   "publisher": {
+    "@id": "https://veggiesfirst.app/#org"
+   }
+  },
+  {
+   "@type": "MobileApplication",
+   "name": "Veggies First",
+   "operatingSystem": "iOS",
+   "applicationCategory": "LifestyleApplication",
+   "description": "A to-do list that keeps the apps you scroll locked until today's to-dos are done. Finish one and you earn time.",
+   "url": "https://veggiesfirst.app/",
+   "image": "https://veggiesfirst.app/img/og.jpg",
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "Monthly",
+     "price": "4.99",
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "Yearly",
+     "price": "47.99",
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "Lifetime",
+     "price": "99.00",
+     "priceCurrency": "USD"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is Veggies First?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Veggies First is an iPhone to-do list that doubles as an app blocker. You pick the apps that eat your time, and they stay locked until today's to-dos are done. Each to-do you finish earns minutes on those apps."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How does it help me stop doomscrolling?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The apps you scroll are locked at the start of the day. To open them you finish something on your list first, and the time you earn runs out, so a quick look can't turn into hours."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does it block apps completely?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. It's built for moderation. You choose which apps, categories or websites count as dessert, how many minutes each to-do earns, and once the list is clear the rest of the day is yours."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I just turn it off when I'm tempted?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Rule changes take effect tomorrow, not in the moment, so the choice you made with a clear head holds. There are a few passes for the days you really need one."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does it work for kids and families?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. In a household, parents hand out chores and homework, set what each one earns and review the proof. One Household plan covers up to six people."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much does it cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It's free to try for 14 days. After that it's $4.99 a month, $47.99 a year or $99 once for a lifetime plan. A Household plan for up to six people is $9.99 a month or $95.99 a year."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is there an Android version?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not yet. Veggies First is for iPhone, and it uses Apple's Screen Time to lock apps."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens to my data?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Your to-dos, Screen Time choices, steps and location live on your phone. There are no ads and no tracking, and nothing is sold. You can delete your account in the app at any time."
+     }
+    }
+   ]
+  }
+ ]
+}
