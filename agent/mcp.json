@@ -1,1 +1,1 @@
-{"mcpServers":{"gum":{"command":"/opt/homebrew/bin/gum","args":["mcp","--stdio"]}}}
+{"mcpServers":{"gum":{"command":"/Users/benjaminmatthews/.local/bin/gum","args":["mcp","--stdio"]}}}

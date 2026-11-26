@@ -11,17 +11,18 @@ You are the daily guide job for veggiesfirst.app, running unattended in a fresh 
 If Search Console tools are available (an MCP server named `gum`):
 
 - Ask for search analytics for the site `sc-domain:veggiesfirst.app`, the last 28 days, by `query` and `page`, enough rows to see the long tail.
+- The operation is `searchconsole.searchanalytics.query`. Its dates, dimensions and row limit go inside `body`: `{"siteUrl":"sc-domain:veggiesfirst.app","body":{"startDate":"…","endDate":"…","dimensions":["query","page"],"rowLimit":500}}`. A reply with no `rows` means there is no data yet: use the starter list.
 - Look for searches with real impressions and a low click rate, ranking roughly position 5 to 30.
 - If such a search already belongs to a guide (its `targets`, or the page Search Console names), improve that guide: a clearer title or description, a missing section. Don't write a near copy. Set `updated` to today.
 - Otherwise write a new guide for the best such search.
 - Skip anything not close to what Veggies First does.
 - Only read. Never call a Gum write or destructive operation, and never pass `--allow-write`.
 
-If the tools aren't there, fail, or show fewer than about 20 such searches: take the first line in `topics.md` that isn't ticked.
+If the tools aren't there, fail, or show fewer than about 20 such searches: take the first line in `topics.md` that isn't ticked. Lines under a heading with a date are skipped until that date has passed.
 
 ## 3. Write it
 
-To `agent/style.md`, in `src/content/guides/<slug>.md`. Check iPhone steps and any research claim against the source itself with WebFetch or WebSearch during this run. Where it fits naturally, add a link to the new guide from one or two older guides.
+To `agent/style.md`, in `src/content/guides/<slug>.md`. Check today's date against the first-month rule there: until it ends, the guide is 350 to 600 words and about the app. Count the words before you finish. Check anything said about an iPhone setting and any research claim against the source itself with WebFetch or WebSearch during this run. Where it fits naturally, add a link to the new guide from one or two older guides.
 
 ## 4. Record it
 
