@@ -2,18 +2,35 @@
 
 Every run of the daily job reads this first. A person reviews each guide before it's published, and Google treats pages written only to rank as spam, so each guide has to be worth reading on its own.
 
+## Who it's for, and what it's for
+
+These guides are marketing for Veggies First. Each one answers a real question, and its answer leads to what the app does: it joins your to-do list to your screen time. The apps you scroll stay locked until you've done something on your list, each thing you finish earns time, and once the list is clear your apps are open for the rest of the day. A reader should finish a guide knowing that, and how it helps with the thing they searched for.
+
+## The first month: short, and about the app (through December 31, 2026)
+
+Ben's rule, 2026-11-26, after the first draft ran long and read like an iPhone manual.
+
+- **350 to 600 words.** If it's longer, cut. Someone should be able to read it in two minutes.
+- **Lead with the answer and the app.** The first two or three sentences answer the question. By the second paragraph the reader knows what Veggies First is and how it solves this.
+- **Most of the guide is how the app works** for this problem: what you set up, what happens when you open a locked app, what you get for finishing. Concrete, from the app's own Help text.
+- **The iPhone's own settings get a sentence each, not steps.** Say the setting exists and what it's good for, and link the words to Apple's page for it ("[set a time allowance in Screen Time](https://support.apple.com/...)"). No numbered Settings paths, no button names. At most three such mentions in a guide.
+- **Every built-in setting is followed by the alternative:** what Veggies First does about the same thing, in a sentence or two. The honest difference is usually this: a built-in limit takes time away and is two taps to skip; Veggies First opens the apps when you've done something.
+- **No research section.** One sourced sentence at most, and only if it helps.
+- Step-by-step iPhone guides (Screen Time, notifications, grayscale and so on) wait until after this date. Topics that are only that are skipped until then. When they exist, the links above point to our own pages instead of Apple's.
+
 ## Shape
 
-- The answer in the first two or three sentences, then the steps. Someone who searched for this wants the answer, not a story.
-- 700 to 1,500 words, whatever the question needs. Plain words. Short paragraphs. `##` headings that say what the section answers.
+- Plain words. Short paragraphs. `##` headings that say what the section answers, three to five of them.
 - One guide per question. If two searches want the same answer, they're one guide with two `targets`.
-- One honest section on how Veggies First does it, headed "How Veggies First does it" (for a `how-it-works` guide the whole guide is that, so no separate section). Include one picture from `public/img/` that fits, written as `![what the picture shows](/img/<file>)`.
+- A heading "How Veggies First does it" for the main section about the app (for a `how-it-works` guide the whole guide is that, so no separate section). Include one picture from `public/img/` that fits, written as `![what the picture shows](/img/<file>)`.
+- After the first month a guide may run to 1,200 words when the question needs it. The app still comes in early and every built-in setting still gets its alternative.
 - Don't write a download block: the page adds it.
 - Link 2 to 4 related guides in the text where they fit, as `/guides/<slug>/`, and list their slugs in `related`. Only link guides that exist. With fewer than three guides on the site, link what there is.
 
 ## Facts
 
-- iPhone steps are real: the Settings path and the button names, checked against Apple's own support pages for the current iOS, with the page in `sources` and the iOS version in `checkedOn`. If a step can't be checked, leave it out.
+- What a guide says about an iPhone setting is real: checked against Apple's own support page for the current iOS during this run, with that page linked in the text and listed in `sources`. Where a guide has step-by-step iPhone instructions (after the first month), the Settings path and button names are checked the same way and the iOS version goes in `checkedOn`. If it can't be checked, leave it out.
+- In the app a minute of dessert is bought with DDC. In a guide say "coins" the first time with "(the app calls them DDC)", then "coins".
 - What Veggies First does comes only from `.run/help.swift` (the app's own Help text) and `.run/home.astro` (the site's home page). If a feature isn't described there, it isn't in the guide. No prices: they change, and the App Store shows them.
 - A claim about research or numbers has a source in `sources`, read during this run. No invented statistics, quotes or studies.
 - Habits and tools only. Nothing that reads as medical advice about attention, anxiety, ADHD or addiction.

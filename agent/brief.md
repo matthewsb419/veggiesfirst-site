@@ -18,11 +18,11 @@ If Search Console tools are available (an MCP server named `gum`):
 - Skip anything not close to what Veggies First does.
 - Only read. Never call a Gum write or destructive operation, and never pass `--allow-write`.
 
-If the tools aren't there, fail, or show fewer than about 20 such searches: take the first line in `topics.md` that isn't ticked.
+If the tools aren't there, fail, or show fewer than about 20 such searches: take the first line in `topics.md` that isn't ticked. Lines under a heading with a date are skipped until that date has passed.
 
 ## 3. Write it
 
-To `agent/style.md`, in `src/content/guides/<slug>.md`. Check iPhone steps and any research claim against the source itself with WebFetch or WebSearch during this run. Where it fits naturally, add a link to the new guide from one or two older guides.
+To `agent/style.md`, in `src/content/guides/<slug>.md`. Check today's date against the first-month rule there: until it ends, the guide is 350 to 600 words and about the app. Count the words before you finish. Check anything said about an iPhone setting and any research claim against the source itself with WebFetch or WebSearch during this run. Where it fits naturally, add a link to the new guide from one or two older guides.
 
 ## 4. Record it
 
