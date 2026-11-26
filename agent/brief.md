@@ -11,6 +11,7 @@ You are the daily guide job for veggiesfirst.app, running unattended in a fresh 
 If Search Console tools are available (an MCP server named `gum`):
 
 - Ask for search analytics for the site `sc-domain:veggiesfirst.app`, the last 28 days, by `query` and `page`, enough rows to see the long tail.
+- The operation is `searchconsole.searchanalytics.query`. Its dates, dimensions and row limit go inside `body`: `{"siteUrl":"sc-domain:veggiesfirst.app","body":{"startDate":"…","endDate":"…","dimensions":["query","page"],"rowLimit":500}}`. A reply with no `rows` means there is no data yet: use the starter list.
 - Look for searches with real impressions and a low click rate, ranking roughly position 5 to 30.
 - If such a search already belongs to a guide (its `targets`, or the page Search Console names), improve that guide: a clearer title or description, a missing section. Don't write a near copy. Set `updated` to today.
 - Otherwise write a new guide for the best such search.
