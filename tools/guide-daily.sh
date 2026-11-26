@@ -50,7 +50,7 @@ cp src/pages/index.astro .run/home.astro
 
 # Search Console through Gum, once Ben has installed it and signed the bot account in.
 MCP=(); TOOLS=(Read Glob Grep Edit Write WebFetch WebSearch "Bash(npm run build)" "Bash(npm run check)")
-if [ -x /opt/homebrew/bin/gum ] && /opt/homebrew/bin/gum doctor >/dev/null 2>&1; then
+if [ -x /Users/benjaminmatthews/.local/bin/gum ] && /Users/benjaminmatthews/.local/bin/gum doctor >/dev/null 2>&1; then
   MCP=(--mcp-config agent/mcp.json); TOOLS+=(mcp__gum); say "Gum is set up: reading Search Console"
 else
   say "Gum isn't set up: starter list"
