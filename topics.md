@@ -2,7 +2,7 @@
 
 For the weeks before Search Console has data. Roughly in order: the daily job takes the first line that isn't ticked, and ticks it when it writes the guide. Two kinds are mixed: questions people search for, and "how Veggies First works" guides (topic `how-it-works`), which explain one part of the app each. The full plan is `Docs/seo-guide-site.md` in the app repo.
 
-- [ ] How to stop doomscrolling
+- [x] How to stop doomscrolling
 - [ ] How to block apps on iPhone until you finish your to-do list
 - [ ] How Veggies First works: to-dos first, then your apps (how-it-works)
 - [ ] How to use Screen Time to limit apps on iPhone
