@@ -3,7 +3,7 @@ title: "Earn your screen time instead of rationing it"
 description: "A time limit takes your apps away. Earning them works the other way: finish a to-do, get minutes. Here's how that runs day to day in Veggies First."
 topic: screen-time
 targets: ["earn screen time", "earn screen time app for adults"]
-published: 2026-11-29
+published: 2026-12-02
 related: ["block-apps-until-to-do-list-done", "how-veggies-first-works"]
 ---
 

@@ -3,7 +3,7 @@ title: "A screen time resolution that lasts past January"
 description: "'Less time on my phone' fades by February because it has no rule behind it. Turn it into something your phone keeps: to-dos first, then your apps."
 topic: screen-time
 targets: ["new year's resolution less screen time", "how to reduce screen time new year"]
-published: 2026-12-31
+published: 2026-12-30
 related: ["how-veggies-first-works", "goals-and-streaks", "days-off-and-weekend-mode"]
 sources:
   - title: "Apple: Set Screen Time Schedules and Time Allowances in Screen Time on iPhone"
@@ -26,7 +26,7 @@ You haven't promised to scroll less. You've set things up so the scrolling comes
 
 ## Set it up while you still mean it
 
-January 1 is when you're most sure. Use that. The rules you set (what a to-do earns, how long a sitting runs) can only be changed from the next midnight, and an app you take off the list stays locked for the rest of the day. The March version of you can't undo it at 11 PM.
+The turn of the year is when you're most sure. Use that. The rules you set (what a to-do earns, how long a sitting runs) can only be changed from the next midnight, and an app you take off the list stays locked for the rest of the day. The March version of you can't undo it at 11 PM.
 
 ## Plan for the bad days now
 

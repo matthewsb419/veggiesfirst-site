@@ -3,7 +3,7 @@ title: "How to study without your phone distracting you"
 description: "Put the semester's due dates on your list, lock the apps that pull you away, and earn them back a study block at a time. A setup for college students."
 topic: focus
 targets: ["how to study without phone distractions", "app to block phone while studying"]
-published: 2026-12-11
+published: 2027-01-01
 related: ["stop-procrastinating-on-your-phone", "sessions-and-dessert-breaks"]
 ---
 

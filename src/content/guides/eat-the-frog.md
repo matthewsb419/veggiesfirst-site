@@ -3,7 +3,7 @@ title: "Eat the frog: do the hard thing first, with help"
 description: "The advice is old: do your worst task first. The hard part is doing it. Here's how to set up your list and your phone so the frog goes first."
 topic: focus
 targets: ["eat the frog method", "how to do the hardest task first"]
-published: 2026-12-27
+published: 2027-01-29
 related: ["stop-procrastinating-on-your-phone", "reward-yourself-for-finishing-tasks"]
 ---
 

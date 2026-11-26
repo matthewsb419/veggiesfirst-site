@@ -3,7 +3,7 @@ title: "How to cut down on TikTok without deleting it"
 description: "You don't have to delete it. Keep TikTok, but make it something you open after a to-do is done, in sittings that end. Here's the setup."
 topic: doomscrolling
 targets: ["how to cut down on tiktok without deleting it", "limit tiktok time iphone"]
-published: 2026-12-17
+published: 2027-01-10
 related: ["stop-doomscrolling", "sessions-and-dessert-breaks"]
 sources:
   - title: "Apple: Set Screen Time Schedules and Time Allowances in Screen Time on iPhone"

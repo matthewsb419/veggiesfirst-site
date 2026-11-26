@@ -3,7 +3,7 @@ title: "How to make a to-do list you'll actually finish"
 description: "Short, specific, written the night before, with somewhere for the rest to go. Five rules for a daily list, and how Veggies First builds them in."
 topic: habits
 targets: ["how to make a to do list you will finish", "to do list that works"]
-published: 2026-12-30
+published: 2027-02-03
 related: ["plan-tomorrow-tonight", "eat-the-frog"]
 ---
 

@@ -3,7 +3,7 @@ title: "The time check: a nudge in the middle of a scroll"
 description: "A screen that pops up while you're in an app to say how long you've been there. One tap dismisses it. Here's how Veggies First uses it."
 topic: how-it-works
 targets: ["reminder how long on app", "time check while scrolling"]
-published: 2026-12-10
+published: 2026-12-23
 related: ["sessions-and-dessert-breaks", "what-a-locked-app-shows"]
 ---
 

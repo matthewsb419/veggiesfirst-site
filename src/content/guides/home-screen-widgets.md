@@ -3,7 +3,7 @@ title: "Screen time widgets: your day on the Home Screen"
 description: "Twelve widgets show your to-dos, your minutes and how your weeks have gone, without opening the app. Here's what each is for and how to add one."
 topic: how-it-works
 targets: ["screen time widget iphone", "to do list widget with screen time"]
-published: 2026-12-23
+published: 2027-01-20
 related: ["goals-and-streaks", "how-veggies-first-works"]
 ---
 

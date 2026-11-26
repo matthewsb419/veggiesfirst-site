@@ -3,7 +3,7 @@ title: "Turn a syllabus or chore chart into a to-do list with AI"
 description: "Snap the list, hand it to the AI you already use, and paste the result into Veggies First. Every task lands on its day. Here's how it works."
 topic: how-it-works
 targets: ["turn syllabus into to do list", "import to do list from photo"]
-published: 2026-12-12
+published: 2027-01-03
 related: ["study-without-phone-distractions", "plan-tomorrow-tonight"]
 ---
 

@@ -3,7 +3,7 @@ title: "Planned too much? An evening window for your apps"
 description: "Some days the list wins. Veggies First can open your apps for an hour or two every evening at a time you set, finished or not, without hiding what's left."
 topic: how-it-works
 targets: ["app blocker with free time window", "unlock apps in the evening"]
-published: 2026-12-25
+published: 2027-01-24
 related: ["days-off-and-weekend-mode", "passes"]
 ---
 

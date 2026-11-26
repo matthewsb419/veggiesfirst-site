@@ -3,7 +3,7 @@ title: "Plan tomorrow tonight: a two-minute evening review"
 description: "Go over what's left of today, decide what happens to each thing, and set tomorrow's list. Veggies First walks you through it at a time you pick."
 topic: habits
 targets: ["plan tomorrow tonight", "evening review routine"]
-published: 2026-12-07
+published: 2026-12-18
 related: ["phone-first-thing-in-the-morning", "how-veggies-first-works"]
 ---
 

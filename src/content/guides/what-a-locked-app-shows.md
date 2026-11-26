@@ -3,7 +3,7 @@ title: "What you see when you open a locked app"
 description: "Veggies First has six screens that can show in place of an app. Two stop you and four only tell you something. Here's how to read each one."
 topic: how-it-works
 targets: ["veggies first lock screen", "why is my app locked veggies first"]
-published: 2026-11-30
+published: 2026-12-04
 related: ["how-veggies-first-works", "block-apps-until-to-do-list-done"]
 ---
 

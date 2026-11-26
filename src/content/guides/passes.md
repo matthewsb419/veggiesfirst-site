@@ -3,7 +3,7 @@ title: "Passes: for the days you need your apps anyway"
 description: "A pass opens your locked apps without finishing a to-do. Veggies First gives you a few a day, makes them slightly awkward to use, and that's the point."
 topic: how-it-works
 targets: ["veggies first pass", "app blocker with emergency access"]
-published: 2026-12-05
+published: 2026-12-13
 related: ["app-blocker-you-cant-cheat", "what-a-locked-app-shows"]
 ---
 

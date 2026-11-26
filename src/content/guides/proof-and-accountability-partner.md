@@ -3,7 +3,7 @@ title: "Get an accountability partner for your to-do list"
 description: "Tell someone, then show them. In Veggies First a to-do can ask for a photo, and a friend decides whether it counts. They don't need the app."
 topic: habits
 targets: ["accountability partner app", "how to get an accountability partner for daily tasks"]
-published: 2026-12-09
+published: 2026-12-20
 related: ["app-blocker-you-cant-cheat", "earn-screen-time"]
 ---
 

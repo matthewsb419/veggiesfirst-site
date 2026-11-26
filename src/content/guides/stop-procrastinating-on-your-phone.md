@@ -3,7 +3,7 @@ title: "How to stop procrastinating on your phone"
 description: "Procrastination on a phone is avoiding a task with an app that's always there. Put the task between you and the app, and make starting small."
 topic: focus
 targets: ["how to stop procrastinating on your phone", "phone procrastination"]
-published: 2026-12-02
+published: 2026-12-06
 related: ["stop-doomscrolling", "earn-screen-time"]
 sources:
   - title: "Apple: Change notification settings on iPhone"

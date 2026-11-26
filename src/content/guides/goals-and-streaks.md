@@ -3,8 +3,8 @@ title: "Screen time goals: keep score without a lock"
 description: "Set a daily limit for the apps you scroll and see how many days you stayed under it. Veggies First tracks the weeks, praises the good days, and locks nothing."
 topic: how-it-works
 targets: ["screen time goal tracker", "track screen time streak"]
-published: 2026-12-21
-related: ["repeating-to-dos", "cut-down-on-tiktok-without-deleting-it"]
+published: 2026-12-27
+related: ["earn-screen-time", "days-off-and-weekend-mode"]
 ---
 
 Sometimes you don't want a lock. You want to know how you're doing. Veggies First has goals for that: a number to aim at each day, and an honest record of how often you hit it.
@@ -52,4 +52,4 @@ Goals don't replace the main rule of the app, to-dos first and then your apps. T
 
 ## Try it
 
-Set a limit a little under what you use now, and check the page in a week. Veggies First is free to try for 14 days. To track a habit the same way, see [Repeating to-dos](/guides/repeating-to-dos/).
+Set a limit a little under what you use now, and check the page in a week. Veggies First is free to try for 14 days. How the minutes are earned in the first place is in [Earn your screen time instead of rationing it](/guides/earn-screen-time/).

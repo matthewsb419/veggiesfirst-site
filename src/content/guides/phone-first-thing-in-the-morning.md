@@ -3,7 +3,7 @@ title: "How to stop checking your phone first thing in the morning"
 description: "Decide the night before what comes first. Veggies First keeps the apps you scroll locked in the morning until one thing on your list is done."
 topic: doomscrolling
 targets: ["stop checking phone first thing in the morning", "how to not go on your phone in the morning"]
-published: 2026-12-06
+published: 2026-12-16
 related: ["stop-doomscrolling", "stop-procrastinating-on-your-phone"]
 sources:
   - title: "Apple: Change notification settings on iPhone"

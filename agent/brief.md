@@ -18,7 +18,9 @@ If Search Console tools are available (an MCP server named `gum`):
 - Skip anything not close to what Veggies First does.
 - Only read. Never call a Gum write or destructive operation, and never pass `--allow-write`.
 
-If the tools aren't there, fail, or show no search worth a guide: write `.run/summary.md` with the first line `Skipped: no search data to work from yet` and change nothing else. The first month's guides in `topics.md` are already written and dated ahead (they go out by themselves at 8 PM on their day), so don't take topics from that list, and don't write a guide that repeats one of them: read every file in `src/content/guides/`, including the ones dated ahead.
+If the tools aren't there, fail, or show no search worth a guide: take the first line under "Extra topics" in `topics.md` that isn't ticked, and tick it. The guides in the schedule at the top of `topics.md` are already written and dated ahead (they go out by themselves at 8 PM on their day), so don't write those again, and don't write a guide that repeats one of them: read every file in `src/content/guides/`, including the ones dated ahead. You may link to a guide only if its `published` date is today or earlier.
+
+Set `published` to today's date: the guide goes out at 8 PM Central today if its pull request is merged by then.
 
 ## 3. Write it
 
@@ -26,7 +28,7 @@ To `agent/style.md`, in `src/content/guides/<slug>.md`. Check today's date again
 
 ## 4. Record it
 
-- Add a row to `guide-log.md`: today's date, the slug, the targets, and the Search Console numbers that picked it.
+- Add a row to `guide-log.md`: today's date, the slug, the targets, and what picked it (the Search Console numbers, or "extra topics").
 
 ## 5. Check
 

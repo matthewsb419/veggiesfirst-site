@@ -3,7 +3,7 @@ title: "Repeating to-dos: habits that put themselves on the list"
 description: "A habit you have to remember to write down is already half lost. In Veggies First a repeat lands on your plate by itself, and can become a goal you track."
 topic: habits
 targets: ["repeating to do list app", "daily habit to do list iphone"]
-published: 2026-12-20
+published: 2027-01-17
 related: ["plan-tomorrow-tonight", "reward-yourself-for-finishing-tasks"]
 ---
 

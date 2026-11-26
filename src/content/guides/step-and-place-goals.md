@@ -3,7 +3,7 @@ title: "To-dos that tick themselves: steps and time at the gym"
 description: "Some to-dos your phone can count for you. In Veggies First a step goal finishes at your step count, and a place goal pays by the minute you're there."
 topic: habits
 targets: ["earn screen time by walking", "app that unlocks apps after steps"]
-published: 2026-12-24
+published: 2027-01-22
 related: ["reward-yourself-for-finishing-tasks", "repeating-to-dos"]
 ---
 

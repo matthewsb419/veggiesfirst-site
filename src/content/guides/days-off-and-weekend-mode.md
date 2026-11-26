@@ -3,7 +3,7 @@ title: "How to take a day off without wrecking your habits"
 description: "A day off you plan is rest. One you slide into is the start of quitting. Veggies First has Weekend mode: a real day off, picked the day before."
 topic: habits
 targets: ["take a day off from habits", "rest day without breaking streak"]
-published: 2026-12-13
+published: 2026-12-25
 related: ["passes", "plan-tomorrow-tonight"]
 ---
 

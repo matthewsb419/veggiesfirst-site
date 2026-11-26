@@ -3,7 +3,7 @@ title: "Big days: when doing a lot should count for something"
 description: "Finish far more than usual and Veggies First rewards it: call it a day with dessert open, shorter breaks, bonus coins and a banked day off."
 topic: how-it-works
 targets: ["reward for productive day", "veggies first big days"]
-published: 2026-12-14
+published: 2027-01-06
 related: ["days-off-and-weekend-mode", "earn-screen-time"]
 ---
 

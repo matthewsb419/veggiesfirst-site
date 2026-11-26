@@ -3,7 +3,7 @@ title: "A feed never ends. Sessions and breaks give it an end"
 description: "Veggies First hands out app time in sessions with a break after each, so there's always a point where the scrolling stops. Here's how they work."
 topic: doomscrolling
 targets: ["take breaks from scrolling", "app that makes you take a break from social media"]
-published: 2026-12-03
+published: 2026-12-09
 related: ["earn-screen-time", "stop-doomscrolling"]
 ---
 

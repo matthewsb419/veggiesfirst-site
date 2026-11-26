@@ -3,7 +3,7 @@ title: "How to reward yourself for finishing tasks, and make it stick"
 description: "A reward works when it comes right after the task and you can't take it early. Veggies First makes your own apps the reward, and holds them until then."
 topic: habits
 targets: ["how to reward yourself for finishing tasks", "reward system for adults"]
-published: 2026-12-16
+published: 2027-01-08
 related: ["earn-screen-time", "big-days"]
 ---
 

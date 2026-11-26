@@ -3,7 +3,7 @@ title: "An app blocker that's hard to cheat, even for you"
 description: "Most blockers fail the same way: you turn them off at 11 PM. Here are the workarounds people try, and how Veggies First handles each one."
 topic: screen-time
 targets: ["app blocker you can't bypass", "screen time limit too easy to ignore"]
-published: 2026-12-04
+published: 2026-12-11
 related: ["block-apps-until-to-do-list-done", "sessions-and-dessert-breaks"]
 ---
 

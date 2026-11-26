@@ -3,7 +3,7 @@ title: "How to block apps on iPhone until your to-do list is done"
 description: "The iPhone can limit how long you use an app, but not until you've done something. Veggies First locks the apps you pick until your to-dos are finished."
 topic: screen-time
 targets: ["block apps until tasks are done", "lock apps until to do list is done iphone"]
-published: 2026-11-28
+published: 2026-11-29
 related: ["how-veggies-first-works", "stop-doomscrolling"]
 sources:
   - title: "Apple: Set Screen Time Schedules and Time Allowances in Screen Time on iPhone"

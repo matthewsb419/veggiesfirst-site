@@ -3,7 +3,7 @@ title: "How to limit Instagram Reels and YouTube Shorts"
 description: "You can't switch Reels or Shorts off, but you can decide when the apps open and how long a sitting lasts. A setup that covers every feed at once."
 topic: doomscrolling
 targets: ["how to limit instagram reels", "limit youtube shorts iphone"]
-published: 2026-12-28
+published: 2027-01-31
 related: ["cut-down-on-tiktok-without-deleting-it", "sessions-and-dessert-breaks"]
 sources:
   - title: "Apple: Set Screen Time Schedules and Time Allowances in Screen Time on iPhone"

@@ -3,7 +3,7 @@ title: "Screen time rules your kids will actually follow"
 description: "Rules hold when they're clear, the same every day, and enforced by something other than a tired parent. What to decide, and how Veggies First keeps it."
 topic: kids
 targets: ["screen time rules for kids", "how to set screen time rules kids will follow"]
-published: 2026-12-19
+published: 2027-01-15
 related: ["chores-before-screen-time", "app-blocker-you-cant-cheat"]
 ---
 

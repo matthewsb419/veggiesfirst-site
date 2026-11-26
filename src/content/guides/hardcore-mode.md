@@ -3,7 +3,7 @@ title: "Hardcore mode: deadlines for people who need them"
 description: "If 'sometime today' means 11:50 PM, Veggies First has a stricter setting: every to-do gets a deadline, and missing it costs you. It's off unless you ask."
 topic: focus
 targets: ["strict app blocker", "to do list with deadlines and penalties"]
-published: 2026-12-26
+published: 2027-01-27
 related: ["app-blocker-you-cant-cheat", "goals-and-streaks"]
 ---
 

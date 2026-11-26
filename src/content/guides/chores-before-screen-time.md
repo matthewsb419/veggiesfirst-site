@@ -3,7 +3,7 @@ title: "Chores before screen time: a setup that runs itself"
 description: "Stop being the one who says no. Put the chores on your kid's phone, and let their apps open when the chores are done. How to set it up in Veggies First."
 topic: kids
 targets: ["chores before screen time", "chores before screen time app"]
-published: 2026-12-18
+published: 2027-01-13
 related: ["how-veggies-first-works", "proof-and-accountability-partner"]
 ---
 
