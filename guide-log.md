@@ -4,3 +4,5 @@ One line per guide written or improved: date, slug, the searches it targets, and
 
 | Date | Slug | Targets | Picked by |
 |---|---|---|---|
+| 2026-11-25 | stop-doomscrolling | how to stop doomscrolling; stop doomscrolling | starter list |
+| 2026-11-26 | stop-doomscrolling | how to stop doomscrolling; stop doomscrolling | rewritten short and app-first after Ben's review |
