@@ -17,6 +17,7 @@ set -u
 REPO=$(cd "$(dirname "$0")/.." && pwd)
 APP=~/code/veggies-before-dessert
 DRY=""; [ "${1:-}" = "--dry" ] && DRY=1
+BASE=${BASE:-origin/main}   # BASE=origin/<branch> tries the job from another branch
 DAY=$(date +%F)
 LOGS=~/Library/Logs/VeggiesFirst; mkdir -p $LOGS
 RUNS=~/Library/Application\ Support/VeggiesFirst/guides; mkdir -p "$RUNS"
@@ -36,10 +37,10 @@ if [ -z "$DRY" ] && [ "$WAITING" -ge 3 ]; then say "skipped: $WAITING guide pull
 git fetch -q origin || { say "couldn't reach GitHub"; exit 1; }
 if [ -z "$DRY" ] && git ls-remote --exit-code --heads origin $BRANCH >/dev/null 2>&1; then say "skipped: $BRANCH is already up"; exit 0; fi
 
-# A fresh checkout of origin/main, so the working copy in ~/code is never touched.
+# A fresh checkout of $BASE, so the working copy in ~/code is never touched.
 git worktree remove --force "$WORK" 2>/dev/null; rm -rf "$RUN"; git worktree prune; mkdir -p "$RUN"
 git branch -D $BRANCH >/dev/null 2>&1
-git worktree add -q -b $BRANCH "$WORK" origin/main || { say "couldn't make the checkout"; exit 1; }
+git worktree add -q -b $BRANCH "$WORK" $BASE || { say "couldn't make the checkout"; exit 1; }
 cd "$WORK" && mkdir -p .run
 npm ci --silent > "$RUN/npm.log" 2>&1 || { say "npm ci failed, see $RUN/npm.log"; exit 1; }
 # What the app does, for the guide's facts: the app's own Help text and the home page.
