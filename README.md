@@ -24,7 +24,7 @@ The answer in the first two or three sentences, then the steps. Real iPhone step
 
 ## The daily guide job
 
-`tools/guide-daily.sh` writes one guide a day and opens it as a pull request labelled `guide`; merging the pull request publishes it. It runs a headless Claude Code session on `agent/brief.md`, which follows `agent/style.md`. With Gum set up (`~/.local/bin/gum`, version 2.3.3 from its release page; Ben connects it once with `tools/gum-connect.sh`, read-only to Search Console) it picks searches where the site shows up but gets few clicks; until then it takes the next line of `topics.md`. It skips the day while three guide pull requests are waiting.
+`tools/guide-daily.sh` writes one guide a day and opens it as a pull request labelled `guide`; merging the pull request publishes it. It runs a headless Claude Code session on `agent/brief.md`, which follows `agent/style.md`. With Gum set up (`~/.local/bin/gum`, version 2.3.3 from its release page; Ben connects it once with `tools/gum-connect.sh`, read-only to Search Console) it picks searches where the site shows up but gets few clicks; until then it takes the next line of `topics.md`. It skips the day while three guide pull requests are waiting, and it takes every Tuesday off.
 
 ```
 tools/guide-daily.sh --dry      # write today's guide, but no push and no pull request
