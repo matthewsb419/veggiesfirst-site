@@ -1,6 +1,7 @@
 import { getCollection } from "astro:content";
 
 export const TOPICS = {
+  "how-it-works": { name: "How Veggies First works", blurb: "The app, one part at a time: to-dos, locked apps, coins and the rest." },
   "doomscrolling": { name: "Doomscrolling", blurb: "Getting out of the feed and back to your day." },
   "screen-time": { name: "Screen Time on iPhone", blurb: "Apple's own limits: what they do, and where they give way." },
   "focus": { name: "Focus and procrastination", blurb: "Starting the hard thing, and staying on it." },

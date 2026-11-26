@@ -10,7 +10,7 @@ const guides = defineCollection({
     title: z.string(),
     // The search snippet: under about 155 characters.
     description: z.string().max(170),
-    topic: z.enum(["doomscrolling", "screen-time", "focus", "habits", "kids"]),
+    topic: z.enum(["how-it-works", "doomscrolling", "screen-time", "focus", "habits", "kids"]),
     // The searches it's written for.
     targets: z.array(z.string()).default([]),
     published: z.coerce.date(),
