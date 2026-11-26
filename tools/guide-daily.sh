@@ -42,6 +42,7 @@ git worktree remove --force "$WORK" 2>/dev/null; rm -rf "$RUN"; git worktree pru
 git branch -D $BRANCH >/dev/null 2>&1
 git worktree add -q -b $BRANCH "$WORK" $BASE || { say "couldn't make the checkout"; exit 1; }
 cd "$WORK" && mkdir -p .run
+[ -r agent/brief.md ] || { say "skipped: $BASE has no agent/brief.md yet (the guide-job pull request isn't merged)"; exit 0; }
 npm ci --silent > "$RUN/npm.log" 2>&1 || { say "npm ci failed, see $RUN/npm.log"; exit 1; }
 # What the app does, for the guide's facts: the app's own Help text and the home page.
 cp "$APP/App/HelpContent.swift" .run/help.swift 2>/dev/null || say "no Help text found at $APP"
