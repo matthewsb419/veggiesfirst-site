@@ -10,12 +10,14 @@ These guides are marketing for Veggies First. Each one answers a real question, 
 
 Ben's rule, 2026-11-26, after the first draft ran long and read like an iPhone manual.
 
-- **350 to 600 words.** If it's longer, cut. Someone should be able to read it in two minutes.
+- **400 to 900 words: a two to five minute read.** If it's longer, cut.
 - **Lead with the answer and the app.** The first two or three sentences answer the question. By the second paragraph the reader knows what Veggies First is and how it solves this.
 - **Most of the guide is how the app works** for this problem: what you set up, what happens when you open a locked app, what you get for finishing. Concrete, from the app's own Help text.
 - **The iPhone's own settings get a sentence each, not steps.** Say the setting exists and what it's good for, and link the words to Apple's page for it ("[set a time allowance in Screen Time](https://support.apple.com/...)"). No numbered Settings paths, no button names. At most three such mentions in a guide.
 - **Every built-in setting is followed by the alternative:** what Veggies First does about the same thing, in a sentence or two. The honest difference is usually this: a built-in limit takes time away and is two taps to skip; Veggies First opens the apps when you've done something.
 - **No research section.** One sourced sentence at most, and only if it helps.
+- **It ends by sending the reader to the app.** The last section is a short "Try it" (or a heading that fits the guide): one or two sentences that say what to do first in the app for this problem, and that Veggies First is free to try for 14 days. The page puts the download button right under it. These guides are feeders into the app, so a reader should never reach the end without being asked to try it.
+- **Show what makes the app different,** a guide at a time: the features, the options and flexibility it gives (passes, days off, big days, an evening window, rewards you set), how it keeps you honest anyway (changes wait for midnight, a removed app stays locked, a pass takes a hold, a friend can check your proof), and what it does when someone tries to get around their own rules.
 - Step-by-step iPhone guides (Screen Time, notifications, grayscale and so on) wait until after this date. Topics that are only that are skipped until then. When they exist, the links above point to our own pages instead of Apple's.
 
 ## Shape

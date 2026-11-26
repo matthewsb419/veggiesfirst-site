@@ -7,8 +7,8 @@
 #   2. the site is built and checked here as well,
 #   3. the guide goes up as a pull request labelled `guide`. Nothing is published:
 #      merging the pull request is what publishes it.
-# Skips the day while 3 or more guide pull requests are waiting, so they don't pile up,
-# and every Tuesday, which is its day off.
+# Runs Monday, Wednesday, Friday and Sunday. Skips the day while 3 or more guide pull
+# requests are waiting, so they don't pile up.
 # Installed on launchd at 6:00 AM by tools/install-guide-check.sh; by hand:
 #   tools/guide-daily.sh          the real thing
 #   tools/guide-daily.sh --dry    everything but the push and the pull request
@@ -32,9 +32,10 @@ note() { osascript -e "display notification \"$1\" with title \"Veggies First gu
 if [ -e "$LOCK" ] && kill -0 "$(cat "$LOCK")" 2>/dev/null; then say "a run is still going (pid $(cat "$LOCK"))"; exit 0; fi
 echo $$ > "$LOCK"; trap 'rm -f "$LOCK"' EXIT
 
-# Tuesdays are a day off (Ben, 2026-11-26): nothing is written or opened. A run by hand
-# with --dry still works, for trying the job out.
-if [ -z "$DRY" ] && [ "$(date +%u)" = 2 ]; then say "skipped: Tuesday is the day off"; exit 0; fi
+# Every other day, and never a Tuesday (Ben, 2026-11-26): Monday, Wednesday, Friday and
+# Sunday. The guides written ahead go out by themselves each evening; this job adds one
+# from what Search Console shows. A run by hand with --dry works on any day.
+case "$(date +%u)" in 1|3|5|7) ;; *) [ -z "$DRY" ] && { say "skipped: not one of this job's days (Mon, Wed, Fri, Sun)"; exit 0; } ;; esac
 
 cd "$REPO" || exit 1
 WAITING=$(gh pr list --label guide --state open --json number --jq length 2>/dev/null || echo 0)

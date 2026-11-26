@@ -3,6 +3,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # 8:05 PM Central (02:05 UTC): the evening rebuild that puts out the guide dated today.
+  schedule:
+    - cron: "5 2 * * *"
 permissions:
   contents: read
   pages: write

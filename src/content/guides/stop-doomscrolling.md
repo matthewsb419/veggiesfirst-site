@@ -41,6 +41,6 @@ You can [set a daily time allowance in Screen Time](https://support.apple.com/gu
 
 You can also [turn off an app's notifications](https://support.apple.com/guide/iphone/change-notification-settings-iph7c3d96bab/ios), which removes the nudges that start a lot of scrolling. That makes the phone quieter. It doesn't help once the app is open, and that's where sessions and breaks come in.
 
-## Where to start
+## Try it
 
-Write tomorrow's list tonight, three things at most. Pick the two or three apps you scroll most as dessert. Tomorrow, the first scroll of the day comes after the first thing on the list.
+Write tomorrow's list tonight, three things at most. Pick the two or three apps you scroll most as dessert. Tomorrow, the first scroll of the day comes after the first thing on the list. Veggies First is free to try for 14 days.
