@@ -21,3 +21,15 @@ DRAFTS=1 npm run build   # the same, with draft guides included
 ## Writing a guide
 
 The answer in the first two or three sentences, then the steps. Real iPhone steps checked on a current iOS, or left out. One honest section on how Veggies First does it, with a real app screen. Sources for any claim about research or numbers; no invented statistics and no medical claims. Link 2 to 4 related guides. 700 to 1,500 words.
+
+## The daily guide job
+
+`tools/guide-daily.sh` writes one guide a day and opens it as a pull request labelled `guide`; merging the pull request publishes it. It runs a headless Claude Code session on `agent/brief.md`, which follows `agent/style.md`. With Gum set up (`~/.local/bin/gum`, version 2.3.3 from its release page; Ben connects it once with `tools/gum-connect.sh`, read-only to Search Console) it picks searches where the site shows up but gets few clicks; until then it takes the next line of `topics.md`. It skips the day while three guide pull requests are waiting.
+
+```
+tools/guide-daily.sh --dry      # write today's guide, but no push and no pull request
+tools/install-guide-check.sh    # run it at 6:00 every morning (launchd)
+npm run check                   # after a build: links, titles, descriptions
+```
+
+Logs are in `~/Library/Logs/VeggiesFirst/guides.log`; each day's run is in `~/Library/Application Support/VeggiesFirst/guides/<date>/`.
