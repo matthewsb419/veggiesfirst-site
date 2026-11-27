@@ -47,6 +47,7 @@ All of them follow `agent/style.md`. The full plan is `Docs/seo-guide-site.md` i
 
 For the Monday, Thursday and Saturday job when Search Console has nothing to go on. It takes the first line that isn't ticked. Each is about the app, like the rest.
 
+- [ ] Do you rot on your phone longer than you meant to? Rest is good; how to give it an end (question-led, see `agent/style.md`)
 - [ ] Screen Time and Veggies First: what each one does, and using both
 - [ ] How to stop scrolling in bed at night
 - [ ] What to do with the to-dos you didn't finish (leftovers, the backlog, letting go)
@@ -63,6 +64,26 @@ For the Monday, Thursday and Saturday job when Search Console has nothing to go 
 - [ ] One plan for the family: how a household is covered
 - [ ] Three looks for the app: hand-drawn, bubbly and hardcore
 - [ ] A lesson a day: learning the app in three weeks
+
+## The second batch of thirty (to be written before February 3, 2027)
+
+Ben, 2026-11-26: thirty more for Wednesdays, Fridays and Sundays, starting Friday February 5, 2027. Every other one is question-led ("Do you struggle with …? Here's how the app helps", see "Ask, don't tell" in `agent/style.md`); the ones between are feature guides like the first thirty. Use what Search Console shows by then to choose and word them. Struggles to start from:
+
+- [ ] Rotting: a lazy afternoon that turns into the whole day. Rest in moderation is good, and the app is how you keep it in moderation
+- [ ] Doomscrolling at night when you meant to sleep
+- [ ] Picking up the phone without deciding to
+- [ ] Putting off one task all day
+- [ ] Starting the day on the phone and never catching up
+- [ ] "Five more minutes" that becomes an hour
+- [ ] A to-do list that only gets longer
+- [ ] Feeling guilty about the time you spend on your phone
+- [ ] Deleting an app and reinstalling it a week later
+- [ ] Setting a limit and tapping "Ignore" every time
+- [ ] Homework that loses to the phone
+- [ ] Arguing with your kids about screen time
+- [ ] Weekends that disappear into a screen
+- [ ] Getting nothing done when you work from home
+- [ ] Keeping a habit going past the second week
 
 ## After December 31, 2026: step-by-step iPhone guides
 

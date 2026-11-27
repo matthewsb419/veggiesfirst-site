@@ -20,6 +20,16 @@ Ben's rule, 2026-11-26, after the first draft ran long and read like an iPhone m
 - **Show what makes the app different,** a guide at a time: the features, the options and flexibility it gives (passes, days off, big days, an evening window, rewards you set), how it keeps you honest anyway (changes wait for midnight, a removed app stays locked, a pass takes a hold, a friend can check your proof), and what it does when someone tries to get around their own rules.
 - Step-by-step iPhone guides (Screen Time, notifications, grayscale and so on) wait until after this date. Topics that are only that are skipped until then. When they exist, the links above point to our own pages instead of Apple's.
 
+## Ask, don't tell (question-led guides)
+
+Ben's rule, 2026-11-26, from a salesman's advice: tell people what to do and they pull back; ask whether they have the problem and they lean in.
+
+- **A question-led guide opens by asking,** in the title and the first line: "Do you lose your mornings to your phone?", "Planned to rest for an hour and lost the afternoon?". One question, about one struggle, in the words a person would use for it.
+- **Then it describes the struggle fairly,** in two or three sentences, so the reader recognises themselves. No scolding, and no "you should". Say what's good about the thing too: rest is needed, a feed is fun, an afternoon doing nothing ("rotting") is fine and sometimes just what a body wants. The trouble is only when it runs longer than you meant.
+- **Then how the app helps with that struggle:** the same how-to as any other guide, aimed at the question. The app's pitch here is moderation, not quitting: you still get the rest or the scroll, with an end to it and something done first.
+- **Suggestions, not orders,** all the way down: "you could", "one way is", "try". The closing "Try it" stays.
+- In a batch written ahead, question-led guides and feature guides take turns, one then the other. Everything else in this file applies to both.
+
 ## Shape
 
 - Plain words. Short paragraphs. `##` headings that say what the section answers, three to five of them.
