@@ -18,16 +18,17 @@ If Search Console tools are available (an MCP server named `gum`):
 - Skip anything not close to what Veggies First does.
 - Only read. Never call a Gum write or destructive operation, and never pass `--allow-write`.
 
-If the tools aren't there, fail, or show fewer than about 20 such searches: take the first line in `topics.md` that isn't ticked. Lines under a heading with a date are skipped until that date has passed.
+If the tools aren't there, fail, or show no search worth a guide: take the first line under "Extra topics" in `topics.md` that isn't ticked, and tick it. The guides in the schedule at the top of `topics.md` are already written and dated ahead (they go out by themselves at 8 PM on their day), so don't write those again, and don't write a guide that repeats one of them: read every file in `src/content/guides/`, including the ones dated ahead. You may link to a guide only if its `published` date is today or earlier.
+
+Set `published` to today's date: the guide goes out at 8 PM Central today if its pull request is merged by then.
 
 ## 3. Write it
 
-To `agent/style.md`, in `src/content/guides/<slug>.md`. Check today's date against the first-month rule there: until it ends, the guide is 350 to 600 words and about the app. Count the words before you finish. Check anything said about an iPhone setting and any research claim against the source itself with WebFetch or WebSearch during this run. Where it fits naturally, add a link to the new guide from one or two older guides.
+To `agent/style.md`, in `src/content/guides/<slug>.md`. Check today's date against the first-month rule there: until it ends, the guide is 400 to 900 words, about the app, and ends by sending the reader to try it. Count the words before you finish. Check anything said about an iPhone setting and any research claim against the source itself with WebFetch or WebSearch during this run. Where it fits naturally, add a link to the new guide from one or two older guides.
 
 ## 4. Record it
 
-- Tick the line in `topics.md` if the topic came from there.
-- Add a row to `guide-log.md`: today's date, the slug, the targets, and what picked it (the Search Console numbers, or "starter list").
+- Add a row to `guide-log.md`: today's date, the slug, the targets, and what picked it (the Search Console numbers, or "extra topics").
 
 ## 5. Check
 

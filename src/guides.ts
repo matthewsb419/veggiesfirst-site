@@ -10,9 +10,18 @@ export const TOPICS = {
 } as const;
 export type Topic = keyof typeof TOPICS;
 
-/** Every published guide, newest first. Drafts only show with DRAFTS=1. */
+/** A guide goes out at 8 PM Central on its `published` day: 02:00 UTC the next morning,
+ *  which is 26 hours after the UTC midnight the date parses to (9 PM in summer time).
+ *  The site is rebuilt every evening just after that (.github/workflows), so a guide
+ *  written ahead with a later date appears by itself on its day. */
+const RELEASE_HOURS = 26;
+// GUIDES_NOW=2026-12-05T02:10:00Z npm run build shows the site as it will be at that moment.
+const clock = () => (process.env.GUIDES_NOW ? new Date(process.env.GUIDES_NOW) : new Date());
+export const isOut = (published: Date, now = clock()) => +published + RELEASE_HOURS * 3600_000 <= +now;
+
+/** Every published guide, newest first. Drafts, and guides dated ahead, only show with DRAFTS=1. */
 export async function guides() {
   const drafts = import.meta.env.DRAFTS === "1" || process.env.DRAFTS === "1";
-  const all = await getCollection("guides", ({ data }) => drafts || !data.draft);
+  const all = await getCollection("guides", ({ data }) => drafts || (!data.draft && isOut(data.published)));
   return all.sort((a, b) => +(b.data.updated ?? b.data.published) - +(a.data.updated ?? a.data.published));
 }
