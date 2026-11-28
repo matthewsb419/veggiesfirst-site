@@ -47,7 +47,7 @@ All of them follow `agent/style.md`. The full plan is `Docs/seo-guide-site.md` i
 
 For the Monday, Thursday and Saturday job when Search Console has nothing to go on. It takes the first line that isn't ticked. Each is about the app, like the rest.
 
-- [ ] Do you rot on your phone longer than you meant to? Rest is good; how to give it an end (question-led, see `agent/style.md`)
+- [x] Do you rot on your phone longer than you meant to? Rest is good; how to give it an end (question-led, see `agent/style.md`)
 - [ ] Screen Time and Veggies First: what each one does, and using both
 - [ ] How to stop scrolling in bed at night
 - [ ] What to do with the to-dos you didn't finish (leftovers, the backlog, letting go)

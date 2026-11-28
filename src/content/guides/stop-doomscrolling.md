@@ -4,7 +4,7 @@ description: "Lock the apps you scroll until something on your to-do list is don
 topic: doomscrolling
 targets: ["how to stop doomscrolling", "stop doomscrolling"]
 published: 2026-11-25
-related: []
+related: ["how-veggies-first-works", "rotting-on-your-phone"]
 sources:
   - title: "Apple: Set Screen Time Schedules and Time Allowances in Screen Time on iPhone"
     url: "https://support.apple.com/guide/iphone/set-schedules-and-time-allowances-iphb0c7313c9/ios"
@@ -44,3 +44,5 @@ You can also [turn off an app's notifications](https://support.apple.com/guide/i
 ## Try it
 
 Write tomorrow's list tonight, three things at most. Pick the two or three apps you scroll most as dessert. Tomorrow, the first scroll of the day comes after the first thing on the list. Veggies First is free to try for 14 days.
+
+The whole loop is in [How Veggies First works](/guides/how-veggies-first-works/).
