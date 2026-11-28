@@ -4,7 +4,7 @@ description: "A to-do list joined to your screen time. The apps you scroll stay 
 topic: how-it-works
 targets: ["how veggies first works", "veggies first app"]
 published: 2026-11-27
-related: ["stop-doomscrolling"]
+related: ["stop-doomscrolling", "rotting-on-your-phone"]
 ---
 
 Veggies First is a to-do list for iPhone that's joined to your screen time. The apps you lose time in stay locked until you've done something on today's list. Finish the list and they're open for the rest of the day.

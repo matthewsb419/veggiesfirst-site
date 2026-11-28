@@ -6,3 +6,4 @@ One line per guide written or improved: date, slug, the searches it targets, and
 |---|---|---|---|
 | 2026-11-25 | stop-doomscrolling | how to stop doomscrolling; stop doomscrolling | starter list |
 | 2026-11-26 | stop-doomscrolling | how to stop doomscrolling; stop doomscrolling | rewritten short and app-first after Ben's review |
+| 2026-11-28 | rotting-on-your-phone | rotting on my phone all day; how to stop bed rotting on your phone | extra topics (Search Console returned no rows for the last 28 days) |
